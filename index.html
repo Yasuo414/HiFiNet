@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HiFiNet Samples</title>
+</head>
+<body>
+    <h1>HiFiNet: Generativní adversariální síť pro syntézu/konverzi zpěvu</h1>
+    <h2>Pouze přehled architektury a vzorky pro poslech</h2>
+    <hr>
+    <h3>Architektura</h3>
+    <figure class="architecture">
+        <img src="assets/architecture.png" alt="Architektura">
+    </figure>
+    <hr>
+    <h3>Konverze hlasu</h3>
+    <p>Obsah zdrojového mluvčího převedený do hlasu cílového mluvčího. V každém řádku: ukázka cílového hlasu (reference), originální nahrávka zdrojového mluvčího a výsledek konverze.</p>
+    <h4>Ewa Farma - Tělo</h4>
+    <div class="sample-info">
+        <strong>Zdroj:</strong> Ewa Farna &nbsp;->&nbsp; <strong>Cíl:</strong> JSUT
+    </div>
+    <table class="samples">
+        <tr>
+            <th>Cílový mluvčí</th>
+            <th>Zdrojový mluvčí</th>
+            <th>Konverze</th>
+        </tr>
+        <tr>
+            <td><audio controls preload="none"><source src="assets/samples/JSUT/speaker_original_file.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="assets/samples/JSUT/tělo_input.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="assets/samples/JSUT/tělo_result.wav" type="audio/wav"></a></td>
+        </tr>
+    </table>
+
+    <h4>Eve - Dramaturgy (Anglická fan-verze)</h4>
+    <div class="sample-info">
+        <strong>Zdroj:</strong> An Xiao &nbsp;->&nbsp; <strong>Cíl:</strong> Kioshi AI
+    </div>
+    <table class="samples">
+        <tr>
+            <th>Cílový mluvčí</th>
+            <th>Zdrojový mluvčí</th>
+            <th>Konverze</th>
+        </tr>
+        <tr>
+            <td><audio controls preload="none"><source src="assets/samples/Kioshi_AI/crusher_p_again_segment_0024.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="assets/samples/Kioshi_AI/dramaturgy_input.wav" type="audio/wav"></audio></td>
+            <td><audio controls preload="none"><source src="assets/samples/Kioshi_AI/dramaturgy_result.wav" type="audio/wav"></audio></td>
+        </tr>
+    </table>
+    <hr>
+    <div class="footer">
+        <p>HiFiNet · SOČ 2026 · Samuel Hušek · EDUCA Pardubice · Project Voxia</p>
+    </div>
+</body>
+</html>
